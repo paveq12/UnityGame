@@ -6,7 +6,7 @@ Gra będzie wykorzystywała technologię Unity w wersji darmowej. Unity to zinte
 
 ENG
 Technology description:
-The game will use the technology Unity in the free version. Unity is an integrated environment for creating three-dimensional computer games or two-dimensional. This engine enables the creation of interactive content such as visuals, animations, etc. It works on operating systems such as Windows, OS X, Ubuntu, and since version 5.1.1 also on smartphones with Android. Unity allows you to program in C #, JavaScript (in a slightly modified form) and Boo[to version 4.6.1] (Python variant). C # is the most common among programmers working on this engine.
+The game will use the technology Unity in the free version. Unity is an integrated environment for creating three-dimensional computer games or two-dimensional. This engine enables the creation of interactive content such as visuals, animations, etc. It works on operating systems such as Windows, OS X, Ubuntu, and since version 5.1.1 also on smartphones with Android. Unity allows you to program in C #, JavaScript (in a slightly modified form) and Boo (Python variant). C # is the most common among programmers working on this engine.
 
 ----------------------------------------------------------------------------------------------------------------------------------------
 
