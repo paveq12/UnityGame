@@ -33,6 +33,7 @@ ENG
 Detailed game plan:
 Week 1 - creating the main character, the script move our character, animation
 Week 2 - creating a camera which follows the hero, game scene design, deleting errors
+Week 3 - building game scene, collisions with objects, deleting errors
 Week 4 - adding opponents or obstacles, reward system, deleting errors
 Week 5 - adding sounds, deleting errors
 Week 6 - deleting errors
