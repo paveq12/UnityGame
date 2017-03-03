@@ -5,14 +5,10 @@ Gra będzie wykorzystywała technologię Unity w wersji darmowej. Unity to zinte
 
 The game will use the technology Unity in the free version. Unity is an integrated environment for creating three-dimensional computer games or two-dimensional. This engine enables the creation of interactive content such as visuals, animations, etc. It works on operating systems such as Windows, OS X, Ubuntu, and since version 5.1.1 also on smartphones with Android. Unity allows you to program in C #, JavaScript (in a slightly modified form) and Boo (Python variant). C # is the most common among programmers working on this engine.
 
-----------------------------------------------------------------------------------------------------------------------------------------
-
 ## Ogólny plan gry/General plans game:
 Będzie to gra platformowa 2D czyli gra zręcznościowa, która będzie polegać głownie na poruszaniu się bohatera w różnych poziomach lub etapach gry. W etapach mogą się znajdować różne wielopoziomowe platformy, po których będziemy się poruszać. Aby ukończyć poziom będziemy musieli unikać pułapek lub likwidować bądź unikać przeciwników, którzy będą nam utrudniać w ukończeniu danego etapu gry. Prawdopodobnie będzie dostępna możliwość zbieraniu różnych nagród i dodatków np. monet, dodatkowych żyć czy power-upów. Postać naszego bohatera będzie posiadała animacje poruszania się takie jak np. bieganie, skakanie, kucanie oraz walki z przeciwnikami.
 
 It will be a 2D platform game that is an arcade game that will rely mainly on moving the hero in Different levels or stages of the game. In stages may be different multi-level platform, after which we will move. To complete a level we have to avoid the pitfalls and eliminate or avoid opponents who will hinder us in the completion of a given stage of the game. It will probably be available opportunity to collect various bonuses and add-ons, for example: coins, extra lives and power-ups.
-
-----------------------------------------------------------------------------------------------------------------------------------------
 
 ## Szczegółowy plan gry/Detailed game plan:
 * Tydzień 1 - stworzenie głównego bohatera, skrypt poruszania się naszej postaci, animacje
