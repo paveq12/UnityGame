@@ -20,7 +20,8 @@ It will be a 2D platform game that is an arcade game that will rely mainly on mo
 * Tydzień 3 - rozbudowanie sceny gry, kolizje z obiektami, usuwanie błędów
 * Tydzień 4 - dodanie przeciwników lub przeszkód, system nagród, usuwanie błędów
 * Tydzień 5 - dodanie dźwięków, usuwanie błędów
-* Tydzień 6 - usuwanie błędów/
+* Tydzień 6 - usuwanie błędów
+
 * Week 1 - creating the main character, the script move our character, animation
 * Week 2 - creating a camera which follows the hero, game scene design, deleting errors
 * Week 3 - building game scene, collisions with objects, deleting errors
