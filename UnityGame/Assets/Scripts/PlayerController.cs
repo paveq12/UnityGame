@@ -5,9 +5,15 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour {
 
     public float heroSpeed;
+    public float jumpForce;
+    public Transform groundTester;
+    public LayerMask layersToTest;
     Animator anim;
     bool dirToRight = true;
     Rigidbody2D rgdBody;
+    // odbijanie się tylko od gruntu
+    private bool onTheGround;
+    private float radius = 0.1f;
 
     // Use this for initialization
     void Start () {
@@ -18,11 +24,21 @@ public class PlayerController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        // Sprawdzanie czy jesteśmy na ziemii
+        onTheGround = Physics2D.OverlapCircle(groundTester.position, radius, layersToTest);
 
         float horizontalMove = Input.GetAxis("Horizontal");
         rgdBody.velocity = new Vector2(horizontalMove * heroSpeed, rgdBody.velocity.y);
-        anim.SetFloat("speed", Mathf.Abs(horizontalMove));
 
+        // Skok postaci
+        if(Input.GetKeyDown(KeyCode.Space) /*oraz tylko od obiektu*/ && onTheGround)
+        {
+            rgdBody.AddForce(new Vector2(0f, jumpForce));
+            anim.SetTrigger("jump");
+        }
+
+        anim.SetFloat("speed", Mathf.Abs(horizontalMove));
+        // Poruszanie się postaci lewo/prawo
         if (horizontalMove < 0 && dirToRight)
         {
             Flip();
