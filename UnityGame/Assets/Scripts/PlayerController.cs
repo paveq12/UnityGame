@@ -8,6 +8,7 @@ public class PlayerController : MonoBehaviour {
     public float jumpForce;
     public Transform groundTester;
     public LayerMask layersToTest;
+    public Transform startPoint;
     Animator anim;
     bool dirToRight = true;
     Rigidbody2D rgdBody;
@@ -24,6 +25,13 @@ public class PlayerController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        // Jeżeli stan animacji jest na spikeContact to wyjdzie z metody
+        if (anim.GetCurrentAnimatorStateInfo(0).IsName("spikeContact"))
+        {
+            rgdBody.velocity = Vector2.zero;
+            return;
+        }
+
         // Sprawdzanie czy jesteśmy na ziemii
         onTheGround = Physics2D.OverlapCircle(groundTester.position, radius, layersToTest);
 
@@ -55,5 +63,10 @@ public class PlayerController : MonoBehaviour {
         Vector3 heroScale = gameObject.transform.localScale;
         heroScale.x *= -1;
         gameObject.transform.localScale = heroScale;
+    }
+
+    public void RestartHero () // Jeżeli ktoś wejdzie w kolce to zostanie przeniesiony do pozycji startowej(metoda do zmiany pozycji)
+    {
+        gameObject.transform.position = startPoint.position;
     }
 }
