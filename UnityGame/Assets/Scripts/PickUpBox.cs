@@ -5,6 +5,7 @@ using UnityEngine;
 public class PickUpBox : MonoBehaviour {
 
     CounterController counterController;
+    public AudioClip clip;
 
 	// Use this for initialization
 	void Start () {
@@ -19,6 +20,7 @@ public class PickUpBox : MonoBehaviour {
     void OnTriggerEnter2D(Collider2D other){ // Jeżeli wejdziemy w obiek bohaterem to się usunie
         if (other.gameObject.name == "Player"){
             Destroy(this.gameObject);
+            AudioSource.PlayClipAtPoint(clip, transform.position);
             counterController.IncrementCounter(); // Wywołanie metody do dodania punktów
         }
     }
